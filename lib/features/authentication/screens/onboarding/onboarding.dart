@@ -2,19 +2,13 @@ import 'package:ecommerce_app/features/authentication/controllers/onboarding_con
 import 'package:ecommerce_app/features/authentication/screens/onboarding/widgets/onboarding_navigation.dart';
 import 'package:ecommerce_app/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:ecommerce_app/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../../utils/device/device_utility.dart';
 import './widgets/onboarding_page.dart';
-import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 
 import '../../../../utils/constants/image_strings.dart';
-import '../../../../utils/helpers/helper_functions.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -53,10 +47,10 @@ class OnBoardingScreen extends StatelessWidget {
           const OnBoardingSkip(),
 
           // Dot Navigation SmoothPageIndicator
-          OnBoardingNavigation(),
+          const OnBoardingNavigation(),
 
           // Circular Button
-          OnBoardingNextButton(),
+          const OnBoardingNextButton(),
         ],
       ),
     );
