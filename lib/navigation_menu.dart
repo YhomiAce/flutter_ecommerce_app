@@ -41,7 +41,7 @@ class NavigationController extends GetxController {
   final Rx<int> _selectedIndex = 0.obs;
   int get selectedIndex => _selectedIndex.value;
   final List<Widget> screens = [
-    HomeScreen(),
+    const HomeScreen(),
     Container(
       color: Colors.purple,
     ),

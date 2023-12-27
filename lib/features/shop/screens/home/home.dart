@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/shop/screens/home/widgets/primary_header_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -6,8 +7,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.green,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            PrimaryHeaderContainer(
+              child: Container(),
+            ),
+          ],
+        ),
       ),
     );
   }
