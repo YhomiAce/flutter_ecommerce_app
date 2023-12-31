@@ -43,6 +43,7 @@ dependencies:
   get_storage:
   flutter_native_splash: ^2.3.8
   smooth_page_indicator: ^1.1.0
+  carousel_slider:
 
 dev_dependencies:
   flutter_test:
